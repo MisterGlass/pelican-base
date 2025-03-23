@@ -4,7 +4,7 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "echo",
+            "label": "local server",
             "type": "shell",
             "command": "pelican -r -l",
             "problemMatcher": [],
@@ -12,6 +12,15 @@
                 "kind": "test",
                 "isDefault": true
             },
+            "options": {
+                "cwd": "${workspaceFolder}/website"
+            }
+        },
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "pelican content",
+            "problemMatcher": [],
             "options": {
                 "cwd": "${workspaceFolder}/website"
             }
